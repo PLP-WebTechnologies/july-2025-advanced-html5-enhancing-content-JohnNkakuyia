@@ -30,3 +30,40 @@ The form also supports multimedia uploads for additional proof and personal intr
 
 ## File Structure
 
+
+---
+
+## Form Sections and IDs
+| Section Name             | HTML ID                 | Purpose |
+|--------------------------|-------------------------|---------|
+| Personal Information     | `#personal-info`        | Collects personal details |
+| Education Background     | `#education-background` | Captures academic details |
+| Financial Needs          | `#financial-needs`      | Explains need and family info |
+| Requirements             | `#requirements`         | Lists required documents |
+| Supportive Multimedia    | `#supportive-multimedia`| Accepts file uploads |
+| Declaration              | `#declaration`          | Final confirmation |
+
+---
+
+## How to Use
+1. **Open** `index.html` in a web browser.
+2. **Navigate** through sections using the navigation menu.
+3. **Fill in** all required fields (`required` attribute is enforced).
+4. **Attach** necessary documents and multimedia.
+5. **Submit** the completed form (submission handler not implemented in this HTML file).
+
+---
+
+## Notes
+- The form is **front-end only**; server-side processing needs to be implemented separately.
+- Some input attributes in the file have syntax errors (e.g., `input type=""text"`), which should be fixed before deployment.
+- The file upload section accepts only specific file types (`image/*`, `.pdf`, `audio/*`, `video/*`).
+- Navigation links use internal section IDs for smooth scrolling.
+
+---
+
+## License
+This form can be modified and reused for educational and administrative purposes.
+
+
+
