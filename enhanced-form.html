@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enhanced Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Enhanced Form</h1>
+            <nav>
+                <ul>
+                    <li><a href="#personal-info">Personal Information</a></li>
+                    <li><a href="#education-background">Background Education</a></li>
+                    <li><a href="#requirements">Requirements</a></li>
+                    <li><a href="#declaration">Declaration</a></li>
+                </ul>
+            </nav>
+            <p>Fill out the form <a href="docs\Bursary_Application_Form.pdf">Bursary_Application_Form.pdf</a>  to submit your information.</p>
+        </header>
+        <aside>
+            <h2>Important Notice</h2>
+            <p>Please ensure that all information is accurate and complete before submitting the form.</p>
+        <main>
+         <form>  
+            <section id="personal-info">
+                <h2>Personal Information</h2>
+                <p>please enter your names</p>
+                
+                <label for ="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required><br>
+                <br>
+                <label for="email_address">Email:</label>
+                <input type="email" id="email_address" name="email_address" required><br>
+                <br>
+                <label for="phone_number">Phone Number:</label>
+                <input type="tel" id="phone_number" name="phone_number" required><br>
+                <br>
+                <label for="date_of_birth">Date of Birth:</label>
+                <input type="date" id="date_of_birth" name="date_of_birth" required><br>
+                <br>
+                <label for="national_id">National ID No:</label>
+                <input type="tel" id="national_id" name="national_id" required><br>
+                <br>
+            </section>
+            <section id="education-background">
+                <h2>Education Background</h2>
+                <label for="current_Institution">Current Institution</label>
+                <input type=""text" id=""current_Institution" name="current_Institution" required><br>
+                <br>
+                <label for="course_of_study">Current Course</label>
+                <input type="text" id=""course_of_study" name="course_of_study" required><br>
+                <br>
+                <label for="level_of_study">Level of Study</label>
+                <select id="level_of_study" name="level_of_study" required>
+                    <option value="diploma">Diploma</option>
+                    <option value="bachelor">Bachelor's Degree</option>
+                    <option value="masters">Master's Degree</option>
+                    <option value="phd">PhD</option>
+                </select><br>
+                <br>
+            </section>
+            <section id="financial-needs">
+                <h2>Financial Needs</h2>
+                <label for="financial_need">Please describe your financial need:</label><br>
+                <textarea id="financial_need" name="financial_need" rows="4" cols="50" required></textarea><br>
+                <br>
+                <p>Please provide family information on the table below</p>
+                <table border="1">
+                    <tr>
+                        <th>Family Member Name</th>
+                        <th>Relationship</th>
+                        <th>Ocupation</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="family_member_name" required></td>
+                        <td><input type="text" name="Relationship" required></td>
+                        <td><input type="text" name="occupation" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="family_member_name" required></td>
+                        <td><input type="text" name="Relationship" required></td>
+                        <td><input type="text" name="occupation" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="family_member_name" required></td>
+                        <td><input type="text" name="Relationship" required></td>
+                        <td><input type="text" name="occupation" required></td>
+                </table>
+            </section>
+            <section id="requirements">
+                <h2>List Of Requirements</h2>
+                <ul>
+                    <li>Personnal Documents</li>
+                        <ol>
+                            <li>National ID copy</li>
+                            <li>Academic Transcripts </li>
+                            <li>Addmission Letter</li>
+                            <li>Proof of Income</li>
+                        </ol>
+                    <li>Financial Documents</li>
+                        <ol>
+                            <li>parents Income Proof</li>
+                            <li>Proof of Expenses</li>
+                            <li>Budget Plan</li>
+                        </ol>
+                </ul>
+            </section>
+            <section id="supportive-multimedia ">
+                <h2>Supportive Multimedia</h2>
+                <p>attach the following media files to support your application</p>
+                <ul>
+                    <li>Passport Photo(image Upload)</li>
+                        <input type="file" id="passport_photo" name="passport_photo" accept="image/*"><br>
+                    <li>Academic Certificates (PDF Upload)</li>
+                        <input type="file" id="academic_certificates" name="academic_certificates" accept=".pdf"><br>
+                    <li>Audio Explanation i.e why you deserve the bursary</li>
+                        <input type="file" id="audio_explanation" name="audio_explanation" accept="audio/*"><br>
+                    <li>Video Introduction</li>
+                        <input type="file" id="video_introduction" name="video_introduction" accept="video/*"><br>
+                </ul>
+            </section>
+            <article>
+                <h2>Defination List</h2>
+                <dl>
+                    <dt>Bursary:</dt>
+                    <dd>A financial aid provided to students to help cover their educational expenses.</dd>
+                    <dt>Guardian:</dt>
+                    <dd>An individual who is legally responsible for the care and management of a minor or dependent.</dd>
+                </dl>
+            </article>
+            <section id="declaration">
+                <h2>Declaration</h2>
+                <p>I hereby declare that the information provided in this form is true and accurate to the best of my knowledge.</p>
+                <label for="declaration">Signature:</label>
+                <input type="text" id="declaration" name="declaration" required><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br>
+                <br>
+            </section>
+        </form>
+        </main>
+    </body>
+</html>
